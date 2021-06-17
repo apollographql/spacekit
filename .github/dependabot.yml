@@ -1,0 +1,22 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: y18n
+    versions:
+    - 4.0.1
+    - 4.0.2
+  - dependency-name: "@babel/generator"
+    versions:
+    - 7.12.11
+    - 7.12.13
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
+  - dependency-name: "@types/classnames"
+    versions:
+    - 2.2.11
